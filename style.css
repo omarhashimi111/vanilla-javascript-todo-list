@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(./image-todo.jpg) no-repeat center center/ cover;
+    height: 100vh;
+}
+
+.app {
+    position: relative;
+}
+
+.todo-container{
+    background-color: #666;
+    height: 60px;
+    width: 300px;
+    position: absolute;
+    top: 85px;
+    left: 14%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+}
+
+#input{
+    flex: 5;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px;
+    border: 0px;
+    font-size: 16px;
+}
+
+#add-task{
+    flex: 1;
+    margin-right: 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 0 0 3px;
+    font-size: 1.3rem;
+}
+#add-task:hover{
+    background-color: orange;
+    color: white;
+}
+#add-task:active{
+    color: red;
+}
+.tasks{
+    height: calc(100vh - 240px);
+    width: 65%;
+    position: absolute;
+    left: 15%;
+    top: 180px;
+    display: flex;
+    gap: 10px;
+}
+
+.left {
+    flex: 1;
+    background-color: cadetblue;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+}
+
+.right{
+    flex:1;
+    background-color: rgb(190, 247, 86);
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+}
+.right-heading{
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+
+
+.new-task{
+    margin: 10px;
+    background-color: rgba(255,255,255,.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    height: 50px;
+    box-shadow: 0 0 2px;
+}
+
+.new-li{
+    flex: 5;
+    font-size: 21px;
+    list-style: none;
+    padding: 10px;
+}
+.new-task button{
+    width: 40px;
+    height: 30px;
+    border-radius: 12px;
+    margin-left: 4px;
+    box-shadow: 0 0 3px;
+    transition: all .3s ease-in-out;
+}
+.delete-btn{
+    margin-right: 4px;
+    border: 1px solid #fff;
+    color: white;
+    background-color: red;
+}
+.delete-btn:hover{
+    background-color: rgb(230, 21, 21);
+}
+.delete-btn:active{
+    background-color: white;
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.complete-btn{
+    color: white;
+    background-color: green;
+    border: 1px solid white;
+}
+.complete-btn:hover{
+    background-color: rgb(9, 207, 9);
+}
+.complete-btn:active{
+    background-color: white;
+    color: green;
+    font-size: 1.5rem;
+}
