@@ -41,6 +41,7 @@ addTask.onclick = () => {
         let copy = completeBtn.previousSibling.cloneNode(true)
         comp.appendChild(copy)
         completeBtn.previousSibling.style.textDecoration = "line-through"
+        completeBtn.disabled = "true"
     })
 
     deleteBtn.addEventListener("click",() => {
